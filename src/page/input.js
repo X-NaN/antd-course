@@ -1,4 +1,5 @@
 import React from 'react';
+//控制文本框组件内容,置空等
 
 const MyInput=({value='',onChange})=>{
     return <input value={value} onChange={onChange}/>;

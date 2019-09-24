@@ -7,6 +7,6 @@ export default {
     ],
     routes:[{
         path:'/',
-        component:'./temp',
+        component:'./tree',
     }],
 }
