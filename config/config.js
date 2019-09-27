@@ -7,6 +7,13 @@ export default {
     ],
     routes:[{
         path:'/',
-        component:'./tree',
-    }],
+        component:'../layout',
+        routes: [
+            {
+                path: 'helloworld',
+                component: './helloworld'
+            }
+        ]
+    },
+    ],
 }
