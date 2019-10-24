@@ -1,7 +1,7 @@
 {
   "name": "antd-course",
   "version": "1.0.0",
-  "description": "",
+  "description": "安装库",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,10 +12,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "umi": "^2.9.6",
+    "umi": "^2.10.7",
     "umi-plugin-react": "^1.10.1"
   },
   "dependencies": {
     "antd": "^3.23.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X-NaN/antd-course.git"
+  },
+  "bugs": {
+    "url": "https://github.com/X-NaN/antd-course/issues"
+  },
+  "homepage": "https://github.com/X-NaN/antd-course#readme"
 }
