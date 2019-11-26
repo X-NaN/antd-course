@@ -16,7 +16,8 @@
     "umi-plugin-react": "^1.10.1"
   },
   "dependencies": {
-    "antd": "^3.23.4"
+    "antd": "^3.23.4",
+    "jquery": "^3.4.1"
   },
   "repository": {
     "type": "git",
