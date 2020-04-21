@@ -1,5 +1,5 @@
-import { Table, Divider, Input} from "antd";
-import React, {createElement} from 'react';
+import { Table, Divider, Input } from "antd";
+import React, { createElement } from 'react';
 import $ from 'jquery'
 
 const { Search } = Input;
@@ -16,7 +16,7 @@ class Module extends React.Component {
       type: 'GET'
     }).then(res => {
       const dataSource = res.HeWeather6[0].basic
-      this.setState({dataSource: dataSource})
+      this.setState({ dataSource: dataSource })
     }).catch(err => {
       console.error(err)
     })
@@ -25,18 +25,18 @@ class Module extends React.Component {
   handleSearch = searchStr => {
     console.log(searchStr)
 
-     $.ajax({
-       url:
-         "https://search.heweather.net/find?location=%E5%8C%97%E4%BA%AC&key=b44262251121469585bc2d212d33a3b3",
-       type: "GET"
-     })
-       .then(res => {
-         const dataSource = res.HeWeather6[0].basic;
-         this.setState({ dataSource: dataSource });
-       })
-       .catch(err => {
-         console.error(err);
-       });
+    $.ajax({
+      url:
+        "https://search.heweather.net/find?location=%E5%8C%97%E4%BA%AC&key=b44262251121469585bc2d212d33a3b3",
+      type: "GET"
+    })
+      .then(res => {
+        const dataSource = res.HeWeather6[0].basic;
+        this.setState({ dataSource: dataSource });
+      })
+      .catch(err => {
+        console.error(err);
+      });
 
   }
 
@@ -49,7 +49,7 @@ class Module extends React.Component {
         render: text => <a>{text}</a>
       },
       {
-        title: "Cnty",
+        title: "国家",
         dataIndex: "cnty",
         key: "cnty"
       },
@@ -96,7 +96,7 @@ class Module extends React.Component {
       }
     ];
 
-    const {dataSource} = this.state;
+    const { dataSource } = this.state;
 
     return (
       <div>

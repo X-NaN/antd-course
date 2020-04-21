@@ -1,15 +1,15 @@
 import React from 'react';
-import {Tabs} from 'antd';
+import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 
 //Tab标签
-class Demo extends React.Component{
-    state={
-        activeKey:'1',
+class Demo extends React.Component {
+    state = {
+        activeKey: '1',
     }
 
-    onTabChange=(activeKey)=>{
-        this.setState({activeKey});
+    onTabChange = (activeKey) => {
+        this.setState({ activeKey });
         console.log(activeKey)
     }
 
