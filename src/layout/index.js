@@ -17,7 +17,7 @@ class BasicLayout extends React.Component {
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1">
                             <Icon type="pie-chart" />
-                            <span>Helloworld</span>
+                            <span>HelloWorld</span>
                         </Menu.Item>
                         <SubMenu
                             key="sub1"
@@ -27,15 +27,15 @@ class BasicLayout extends React.Component {
                             <Menu.Item key="3"><Link to="/dashboard/monitor">应用管理</Link></Menu.Item>
                             <Menu.Item key="4"><Link to="/dashboard/workplace">接口管理</Link></Menu.Item>
                             <SubMenu key="sub2" title={<span><Icon type="dashboard" />测试管理</span>}>
-                                <Menu.Item key="2"><Link to="/dashboard/testAccount">测试账号</Link></Menu.Item>
-                                <Menu.Item key="2"><Link to="/dashboard/testAccount">手工用例库</Link></Menu.Item>
+                                <Menu.Item key="5"><Link to="/dashboard/monitor">测试账号</Link></Menu.Item>
+                                <Menu.Item key="6"><Link to="/dashboard/workplace">手工用例库</Link></Menu.Item>
 
                             </SubMenu>
                         </SubMenu>
                     </Menu>
                 </Sider>
                 <Layout>
-                    <Header style={{ background: '#fff', textAlign: 'center', padding: 0 }}>Header</Header>
+                    <Header style={{ background: '#fff', textAlign: 'center', padding: 0 }}>内容Header</Header>
                     <Content style={{ margin: '24px 16px 0' }}>
                         <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
                             {this.props.children}
